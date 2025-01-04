@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=Lexend:wght@100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* ---------------font styles for different tags------  */
+/* Apply Abril Fatface for  headings */
+h1, h2, header, .headline {
+    font-family: 'Abril Fatface', serif;
+}
+
+/* Apply Cinzel for smaller headings and subtitles */
+h3, h4, section, .subtitle {
+    font-family: 'Cinzel', serif;
+}
+
+/* Apply Lexend for body text and lists */
+p, span, li, .body-text {
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Apply MuseoModerno for accents and smaller headings */
+h5, h6, .accent-text, .callout {
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+/* Apply Roboto Slab for quotes, footers, and structured content */
+blockquote, code, footer, .quote, .details {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-dark: #5c0017e0;
+    --bg-dark-scnd: #5c0017;
+    --bg-light: #6b2d3c;
+    --text-clr: #fdfed6;
+    --text-hvr: #f5a700;
+    --text-grey: #6D6D6D;
+
+    --hero-bg: linear-gradient(180deg, #5c0017 0%, #5c001733 10%), linear-gradient(to right, #5c0017, #5c0017c4), url('../images/hero/Slide-Background-1024x317.png');
+
+    --border-radius: 15px;
+}
+a, ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+.header {
+    background: var(--hero-bg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+    
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 10%;
+    background: var(--bg-dark);
+}
+
+.header nav .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.header nav ul {
+    display: flex;
+    font-size: 1.2em;
+    
+}
+.header nav ul li {
+    margin: 0 1em;
+    font-size: 1.1em;
+}
+
+.header nav ul li a {
+    color: var(--text-clr);
+    transition: .3s;
+}
+
+.header nav ul li a:hover {
+    color: var(--text-hvr);
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-clr);
+}
+.hero .img-container img {
+    margin-top: 3.95em;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero-text {
+    margin-left: 5em;
+}
+
+.hero .icons i {
+    font-size: 3em;
+    margin-top: .35em;
+    color: var(--text-hvr); 
+    transition: .3s;
+}
+
+.hero .icons i:hover {
+    color: var(--text-clr);
+    opacity: .5;
+    transform: translateY(-5px);
+}
+
+
+/*  styling  */
+ .promotion {
+    width: 85%;
+    margin: 2em auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    
+}
+ .promotion .inner-card {
+    background: var(--bg-dark-scnd);
+    padding: 2em;
+    color: var(--text-clr);
+    border-radius: var(--border-radius);
+    
+    
+    
+}
+ .promotion .inner-card h1 {
+    font-size: 2em;
+    word-spacing: 5px;
+    letter-spacing: 1.5px;
+    margin-bottom: .2em;
+}
+
+ .promotion .inner-card p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.promotion .inner-card h5 a {
+    color: var(--text-hvr);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ .promotion .inner-card:last-child {
+    background: transparent;
+    color: var(--bg-dark-scnd);
+    box-shadow: -10px 0px 10px #ce0505ac;
+}
+
+ .promotion .inner-card:last-child h1 span {
+    font-weight: 300;
+}
+ .promotion .inner-card:last-child p {
+    color: var(--text-grey);
+    font-weight: 300;
+    font-size: 1em;
+}
+
+
+/* about styling  */
+ .about {
+    margin-top: 5em;
+}
+ .about .h1-width-style {
+    background: var(--bg-dark-scnd);
+    width: 50%;
+    padding: .5em 8%;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+ .h1-width-style h1 {
+    /* font-size: 2em; */
+    text-transform: uppercase;
+    color: var(--text-clr);
+}
+
+ .about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+
+ .about .about-content .about-inner {
+    width: 65%;
+    padding: 1em 0;
+    color: var(--text-grey);
+}
+
+ .about .about-content .about-img img {
+    border-radius: var(--border-radius);
+}
+
+ .about .about-content .about-inner .icons i{
+    font-size: 3em;
+    margin-top: 0em;
+    color: var(--text-grey); 
+    transition: .3s;
+}
+
+ .about .about-content .about-inner .icons i:hover {
+    color: var(--bg-dark-scnd);
+    transform: translateY(-5px);
+}
+.about  .reg-and-brochures {
+    margin-top: 2em;
+}
+.about .about-content .about-inner-brochure {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 2em;
+    width: 100%;
+    gap: 1.5em;
+}
+
+.about .about-content .about-inner-brochure a {
+    font-size: 1em;
+    color: var(--text-grey);
+    display: flex;
+    
+    align-items: center;
+}
+.about .about-content .about-inner-brochure a i {
+    font-size: 2em;
+    background: var(--bg-dark-scnd);
+    padding: 1em;
+    margin-right: .5em;
+    border-radius: var(--border-radius);
+    color: var(--text-hvr);
+}
+
+
+/* footer styling  */
+footer {
+    background: url('../images/sun-tornado.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000ac;
+}
+.footer-contact-info > * {
+    position: relative;
+}
+.footer-contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 10%;
+    color: var(--text-clr);
+    
+}
+.footer-contact-info  .inner-content h1{
+    margin-bottom: 1em;
+    
+}
+.footer-contact-info  .inner-content p,
+.footer-contact-info  .inner-content ul li {
+    margin-bottom: 1.2em;
+}
+.footer-contact-info  .inner-content ul li a {
+    color: var(--text-hvr);
+    transition: .3s;
+    margin-bottom: 1.2em;
+}
+.footer-contact-info  .inner-content ul li a:hover {
+    color: var(--text-clr);
+}
+.copyright  {
+    background: var(--bg-dark);
+    padding: 1em 10%;
+    text-align: center;
+    color: var(--text-hvr);
+    opacity: .8;
+    word-spacing: 2px;
+    position: relative;
+}
+
+
+
