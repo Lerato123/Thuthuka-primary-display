@@ -63,12 +63,16 @@ a, ul, li {
     
 }
 
+
 .header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 10%;
     background: var(--bg-dark);
+}
+.header nav button {
+    display: none;
 }
 
 .header nav .logo img {
@@ -316,5 +320,141 @@ footer::before {
     position: relative;
 }
 
+/* Existing styles remain unchanged */
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    /* .header nav button  {
+        display: block;
+        font-size: 2em;
+        z-index: 999;
+    } */
+    .header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        background: var(--bg-dark);
+        padding: 1em;
+        position: absolute;
+        top: 70px;
+        right: 10%;
+        display: none;
+    }
+
+    .header nav ul.active {
+        display: flex;
+    }
+
+    .header nav ul li {
+        margin: 1em 0;
+    }
+
+    .header nav .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero .img-container img {
+        width: 80%;
+        margin-top: 2em;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero .icons {
+        justify-content: center;
+    }
+
+    .promotion .inner-card {
+        padding: 1em;
+    }
+
+    .promotion .inner-card h1 {
+        font-size: 1.5em;
+    }
+
+    .promotion .inner-card p {
+        font-size: 1em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .about-content .about-inner {
+        width: 100%;
+    }
+
+    .about-content .about-img img {
+        width: 80%;
+        margin: 1em auto;
+    }
+
+    .about .about-inner-brochure {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header nav button {
+        display: block;
+    }
+    .header nav ul {
+        right: 5%;
+    }
+
+    .promotion {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .about-content .about-img img {
+        width: 100%;
+    }
+
+    .about .about-inner-brochure {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .promotion .inner-card h1 {
+        font-size: 1.2em;
+    }
+
+    .promotion .inner-card p {
+        font-size: 0.9em;
+    }
+
+    .footer-contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact-info .inner-content {
+        margin-bottom: 1em;
+    }
+}
 
 
