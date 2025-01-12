@@ -105,6 +105,7 @@ a, ul, li {
     justify-content: space-between;
     align-items: center;
     color: var(--text-clr);
+    
 }
 .hero .img-container img {
     margin-top: 3.95em;
@@ -426,13 +427,28 @@ footer::before {
 
     .about .about-inner-brochure {
         grid-template-columns: 1fr;
+        
         gap: 1em;
     }
 }
 
 @media (max-width: 480px) {
+    button i {
+        font-size: 2em;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-bottom: 10em;
+        
+    }
+    .hero .img-container img {
+        width: 300px;
+        height: 250px;
+    }
     .hero h1 {
         font-size: 2em;
+        
     }
 
     .hero p {
@@ -445,6 +461,27 @@ footer::before {
 
     .promotion .inner-card p {
         font-size: 0.9em;
+    }
+
+    .about .h1-width-style {
+        width: 100%;
+        text-align: center;
+        border-radius: 12px;
+        font-size: .8em;
+        word-spacing: 5px;
+    letter-spacing: 2px;
+    }
+    .about .about-content .about-inner {
+        width: 100%;
+        
+    }
+
+    .about .about-content .about-inner-brochure {
+        display: grid;
+        margin-bottom: 2em;
+        background: aquamarine;
+        grid-template-columns: 1fr;
+        
     }
 
     .footer-contact-info {
