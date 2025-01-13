@@ -479,7 +479,6 @@ footer::before {
     .about .about-content .about-inner-brochure {
         display: grid;
         margin-bottom: 2em;
-        background: aquamarine;
         grid-template-columns: 1fr;
         
     }
